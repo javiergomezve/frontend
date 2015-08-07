@@ -2,9 +2,10 @@
 @import "auxiliares"
 
 
+azul = #22bce0
 gris_oscuro = #444
 gris_claro = #e8e8e8
-azul = #22bce0
+naranja = #DD4F24
 
 body
 	background gris_claro
@@ -16,6 +17,8 @@ header
 	background gris_oscuro
 	color white
 	padding 0.5em
+	overflow hidden
+	position relative
 	
 	.logo
 		border-right 1px solid azul
@@ -25,11 +28,54 @@ header
 			width 52px
 	
 	.titular
-		margin 0 80px 0 70px
+		margin 0 60px 0 70px
+		
+		.filtro
+			color azul
+			text-decoration none
+			font-weight bold
+			font-style italic
+			font-size 14px
+			
+		.publicar
+			background naranja
+			color white
+			padding 0.2em 0.5em
+			text-decoration none
+			font-style italic
+			text-shadow 1px 1px 0px black
+			margin -5px 1em 0 0
+		
 		.titulo
 			font-size 18px
 			font-weight normal
-			padding 0
 			margin 0
+			padding 0
+	
+	.usuario
+		position absolute
+		right 0
+		top 0
+		
+		.avatar
+			position relative
+			z-index 1
+			margin 10px 15px
+			img
+				width 50px
+				border-radius 50%
+		
+		.flechita
+			background naranja
+			color white
+			display block
+			margin -9px 0 0 -1em
+			padding 0 2px
+			position absolute
+			right 0
+			text-align right
+			top 50%
+			width 50%
 
-
+nav
+	background azul
